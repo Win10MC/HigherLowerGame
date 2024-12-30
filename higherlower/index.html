@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Higher or Lower</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-screen" class="container">
+        <h1>Higher or Lower</h1>
+        <div class="input-group">
+            <label for="range-input">Set the Maximum Range:</label>
+            <input type="number" id="range-input" min="10" max="1000" value="100">
+        </div>
+        <button id="start-btn">Start Game</button>
+    </div>
+
+    <div id="game-screen" class="container visible hidden">
+        <h1>Higher or Lower</h1>
+        <p class="current-number" id="current-number">0</p>
+        <div class="button-container">
+            <button id="higher-btn">Higher<br><span class="button-probability">0.00%</span></button>
+            <button id="lower-btn">Lower<br><span class="button-probability">100.00%</span></button>
+        </div>
+        <p id="score" class="score">Score: 0</p>
+        <button id="restart-btn">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
